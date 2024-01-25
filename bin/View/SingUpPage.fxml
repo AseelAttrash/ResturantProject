@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SingUpController">
+   <children>
+      <MediaView fx:id="media" fitHeight="448.0" fitWidth="713.0" preserveRatio="false" smooth="false" />
+      <AnchorPane layoutX="112.0" layoutY="56.0" prefHeight="343.0" prefWidth="486.0" style="-fx-background-color: white; -fx-opacity: 0.7;">
+         <children>
+            <Text fill="#220b57" layoutX="10.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sing Up" wrappingWidth="148.0">
+               <font>
+                  <Font name="Bell MT Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#5e5959" layoutX="62.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill in this form to create an account!" wrappingWidth="348.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="FnameFld" alignment="TOP_CENTER" layoutX="118.0" layoutY="68.0" prefHeight="26.0" prefWidth="138.0" promptText="First Name" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="Arial Narrow" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="LNameFld" alignment="TOP_CENTER" layoutX="274.0" layoutY="70.0" prefHeight="26.0" prefWidth="138.0" promptText="Last Name" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="Arial Narrow" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="UserNameFld" alignment="TOP_CENTER" layoutX="118.0" layoutY="109.0" prefHeight="26.0" prefWidth="138.0" promptText="User Name" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="Arial Narrow" size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="PassWFld" layoutX="274.0" layoutY="109.0" prefHeight="26.0" prefWidth="138.0" promptText="PassWord" style="-fx-background-color: transparent;" />
+            <DatePicker fx:id="BdayFld" layoutX="280.0" layoutY="163.0" prefHeight="27.0" prefWidth="148.0" promptText="Birthday" style="-fx-background-color: transparent; -fx-border-color: #d0cbcb;" />
+            <ComboBox fx:id="GenderFld" layoutX="118.0" layoutY="216.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="138.0" promptText="Gender" style="-fx-border-color: #d0cbcb; -fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ComboBox>
+            <ComboBox fx:id="Neighboorcombobox" layoutX="119.0" layoutY="180.0" prefHeight="24.0" prefWidth="138.0" promptText="Neighberhood" style="-fx-background-color: transparent; -fx-border-color: #d0cbcb;" />
+            <CheckBox fx:id="LactoseCheck" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="272.0" layoutY="226.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="24.0" prefWidth="148.0" text="is Sensitive To Lactose" />
+            <CheckBox fx:id="GlutenCheck" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="274.0" layoutY="196.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="148.0" text="is Sensitive To Gluten" />
+            <Button fx:id="RegisterBtn" layoutX="180.0" layoutY="255.0" mnemonicParsing="false" onAction="#RegisterAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #828fae;" text="Register!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginBtn" layoutY="320.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #828fae;" text="Back to LogIn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Line endX="8.0" layoutX="397.0" layoutY="95.0" startX="-119.0" />
+            <Line endX="8.0" layoutX="244.0" layoutY="132.0" startX="-119.0" />
+            <Line endX="8.0" layoutX="398.0" layoutY="132.0" startX="-119.0" />
+            <ProgressBar fx:id="Strength" layoutX="279.0" layoutY="134.0" prefHeight="10.0" prefWidth="128.0" progress="0.0" style="-fx-background-color: transparent; -fx-opacity: 0.8;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

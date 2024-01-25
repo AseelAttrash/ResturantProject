@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="408.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManagerController">
+   <children>
+      <ImageView fitHeight="587.0" fitWidth="795.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/managerback.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="80.0" layoutY="47.0" prefHeight="458.0" prefWidth="619.0" style="-fx-background-color: white; -fx-opacity: 0.8;">
+         <children>
+            <Button fx:id="ByexpertBtn" layoutX="20.0" layoutY="212.0" mnemonicParsing="false" onAction="#getCooksByexpAction" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Get Cooks By Expertise" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="profitRelButton" layoutX="20.0" layoutY="169.0" mnemonicParsing="false" onAction="#profitRelationAction" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Profit Relation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="AllMachineBtn" layoutX="20.0" layoutY="130.0" mnemonicParsing="false" onAction="#createAllMachineAction" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="create AIl Macine" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="PopularCompBtn" layoutX="20.0" layoutY="294.0" mnemonicParsing="false" onAction="#PopularComponents" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Popular Components" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="DishesBtn" layoutX="385.0" layoutY="140.0" mnemonicParsing="false" onAction="#DishesAction" prefHeight="36.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Dishes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="revenueBtn" layoutX="20.0" layoutY="255.0" mnemonicParsing="false" onAction="#revenueAction" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="revenue From Express Deliveries" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="CustomersBtn" layoutX="385.0" layoutY="184.0" mnemonicParsing="false" onAction="#CustomerAction" prefHeight="36.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="OrdersBtn" layoutX="384.0" layoutY="362.0" mnemonicParsing="false" onAction="#OrdersAction" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="DelyPersonsBtn" layoutX="385.0" layoutY="320.0" mnemonicParsing="false" onAction="#DelPersonsAction" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Delivery Persons" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="DelyAreasBtn" layoutX="385.0" layoutY="278.0" mnemonicParsing="false" onAction="#DelAreasAction" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Delivery Areas" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="CooksBtn" layoutX="385.0" layoutY="229.0" mnemonicParsing="false" onAction="#CooksAction" prefHeight="41.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Cooks" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="getdeliveriesbypersonbutton" layoutX="20.0" layoutY="92.0" mnemonicParsing="false" onAction="#getdeliveriesbypersonAction" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="get Deliveries By Person" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="#685e5e" layoutX="421.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Restaurant" wrappingWidth="166.0">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#685e5e" layoutX="47.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant Queries" wrappingWidth="166.0">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="compsBtn" layoutX="385.0" layoutY="95.0" mnemonicParsing="false" onAction="#ComponentsAction" prefHeight="36.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Components" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="NumOfDeliveriesBtn" layoutX="20.0" layoutY="334.0" mnemonicParsing="false" onAction="#getNumOfDeliveriesAction" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="get Number Of Deliveries Per Type" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="DeliveriesBtn" layoutX="384.0" layoutY="405.0" mnemonicParsing="false" onAction="#DeliveriesAction" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Deliveries" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="#a80808" layoutX="121.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back Manager!" wrappingWidth="455.13671875">
+               <font>
+                  <Font name="French Script MT" size="48.0" />
+               </font>
+            </Text>
+           
+            <Button fx:id="logoutButtn" mnemonicParsing="false" onAction="#logoutt" prefHeight="20.0" prefWidth="95.0" style="-fx-background-color: #d07d7d;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="getrelvantBtn" layoutX="20.0" layoutY="372.0" mnemonicParsing="false" onAction="#GetrelevantdishAction" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Get Relevant Dish" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="deliverBtn" layoutX="19.0" layoutY="411.0" mnemonicParsing="false" onAction="#DeliverAction" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #d07d7d;" text="Deliver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="548.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RestaurantMenuController">
+   <children>
+      <ImageView fitHeight="565.0" fitWidth="864.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pexels-photo-1640777.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="87.0" layoutY="117.0" prefHeight="383.0" prefWidth="648.0" style="-fx-background-color: white; -fx-opacity: 0.89;">
+         <children>
+            <TableView fx:id="DishesTable" layoutX="185.0" layoutY="97.0" prefHeight="286.0" prefWidth="456.0" style="-fx-border-color: white;">
+              <columns>
+                <TableColumn fx:id="IddishClmn" prefWidth="55.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Dish ID" />
+                <TableColumn fx:id="DishNameClmn" prefWidth="83.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Dish Name" />
+                  <TableColumn fx:id="DishTypeClmn" prefWidth="72.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Dish Type" />
+                  <TableColumn fx:id="DishCompsClmn" prefWidth="115.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Dish Components" />
+                  <TableColumn fx:id="PriceClmn" prefWidth="43.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Price" />
+                  <TableColumn fx:id="TimeTomakeClmn" prefWidth="87.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Time To make" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="264.0" fitWidth="185.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/7a467bba-932c-4037-8240-ee6ee14eebc7.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="197.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Dear Customer!" wrappingWidth="283.3114166259765">
+               <font>
+                  <Font name="French Script MT" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#494986" layoutX="27.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JacvaEat has a special Dishes for you with an uniqe Components!" wrappingWidth="433.3114166259765">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="BackButton" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #d7cfcf;" text="Back">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

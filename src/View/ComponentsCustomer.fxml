@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ComponentsCustomerController">
+   <children>
+      <ImageView fitHeight="575.0" fitWidth="735.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pexels-photo-1640777.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="58.0" layoutY="34.0" prefHeight="401.0" prefWidth="582.0" style="-fx-background-color: white; -fx-opacity: 0.88;">
+         <children>
+            <TableView fx:id="ComponentTable" layoutX="1.0" layoutY="159.0" prefHeight="238.0" prefWidth="436.0" style="-fx-border-color: white;">
+              <columns>
+                <TableColumn fx:id="IDClmn" prefWidth="93.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Component ID" />
+                <TableColumn fx:id="NameClmn" prefWidth="112.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Component Name" />
+                  <TableColumn fx:id="LactoseClmn" prefWidth="78.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="has Lactose" />
+                  <TableColumn fx:id="GlutenClmn" prefWidth="79.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="has Gluten" />
+                  <TableColumn fx:id="PriceClmn" prefWidth="70.0" style="-fx-background-color: #d7cfcf; -fx-border-color: #b2aaaa;" text="Price" />
+              </columns>
+            </TableView>
+            <Text fill="#a80808" layoutX="136.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your dish Components" wrappingWidth="342.955078125">
+               <font>
+                  <Font name="French Script MT" size="48.0" />
+               </font>
+            </Text>
+            <Button fx:id="backbtn" layoutX="-1.0" mnemonicParsing="false" onAction="#backAction" style="-fx-background-color: #d7cfcf;" text="Back to your dishes">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="CompsCombobox" layoutX="150.0" layoutY="68.0" prefHeight="25.0" prefWidth="219.0" promptText="Restaurant Components" style="-fx-background-color: transparent; -fx-border-color: #d0cbcb;" />
+            <Button fx:id="addCompBtn" layoutX="176.0" layoutY="106.0" mnemonicParsing="false" onAction="#AddAction" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #d7cfcf;" text="Add Component">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="removeCompBtn" layoutX="449.0" layoutY="188.0" mnemonicParsing="false" onAction="#RemoveAction" style="-fx-background-color: #d7cfcf;" text="Remove Component">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

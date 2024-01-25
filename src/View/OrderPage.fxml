@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OrderController">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="783.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/wooden-board-empty-table-top-blurred-background_1253-1584.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="26.0" layoutY="31.0" prefHeight="542.0" prefWidth="657.0" style="-fx-background-color: white; -fx-opacity: 0.8;">
+         <children>
+            <ListView fx:id="DishesList" layoutX="139.0" layoutY="77.0" prefHeight="122.0" prefWidth="172.0" />
+            <TableView fx:id="OrdersTable" layoutY="217.0" prefHeight="325.0" prefWidth="487.0" style="-fx-border-color: white;">
+              <columns>
+                <TableColumn fx:id="IdClmn" prefWidth="75.0" style="-fx-background-color: #dacad6; -fx-border-color: #aba0a0;" text="ID" />
+                <TableColumn fx:id="CustomerClmn" prefWidth="128.0" style="-fx-background-color: #dacad6; -fx-border-color: #aba0a0;" text="Customer" />
+                  <TableColumn fx:id="DeliveryClmn" prefWidth="114.0" style="-fx-background-color: #dacad6; -fx-border-color: #aba0a0;" text="Delivery" />
+                  <TableColumn fx:id="DishesClmn" prefWidth="166.0" style="-fx-background-color: #dacad6; -fx-border-color: #aba0a0;" text="Order Dishes" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="122.0" fitWidth="149.0" layoutX="501.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/a1eac3e5-ee06-4def-8c98-5975e5f14963.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#aa86abd6" layoutX="259.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order" wrappingWidth="105.0">
+               <font>
+                  <Font name="French Script MT" size="48.0" />
+               </font>
+            </Text>
+            <Button fx:id="backAction" mnemonicParsing="false" onAction="#backAction" prefHeight="20.0" prefWidth="95.0" style="-fx-background-color: #dacad6;" text="Back">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="#615252" layoutX="3.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Dishes :" wrappingWidth="132.13671875">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="DeliveryCombo" layoutX="431.0" layoutY="55.0" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-border-color: #d7d1d1;" />
+            <Text fill="#615252" layoutX="320.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery  :" wrappingWidth="89.13671875">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="CustomerCombo" layoutX="434.0" layoutY="101.0" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: transparent; -fx-border-color: #d7d1d1;" />
+            <Button fx:id="AddOrderButton" layoutX="379.0" layoutY="156.0" mnemonicParsing="false" onAction="#AddOrderAction" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #dacad6;" text="Add Order">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="RemoveOrderButton" layoutX="494.0" layoutY="246.0" mnemonicParsing="false" onAction="#RemoveOrderActiob" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #dacad6;" text="Remove Order">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="UpdateOrderButton" layoutX="494.0" layoutY="287.0" mnemonicParsing="false" onAction="#UpdateOrderAction" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #dacad6;" text="Update Order">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="#615252" layoutX="329.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer :" wrappingWidth="89.13671875">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
